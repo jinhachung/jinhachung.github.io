@@ -1,3 +1,20 @@
-theme: jekyll-theme-minimal
-title: Welcome!
-description: Feel free to bookmark this page to keep an eye on my project updates!
+title: Jinha Chung
+description: "Ph.D. Candidate | KAIST VIALab"
+url: "https://jinhachung.github.io"
+baseurl: ""
+
+# Style: "a" for clean minimal, "b" for modern with animations
+style: b
+
+# SEO
+author: Jinha Chung
+lang: en
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

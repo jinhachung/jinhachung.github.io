@@ -1,0 +1,21 @@
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="#" class="nav-name">{{ site.title }}</a>
+    <ul class="nav-links">
+      <li><a href="#education">Education</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('open');
+  this.classList.toggle('open');
+});
+</script>

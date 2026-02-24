@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  {% seo %}
+  {% if site.style == "b" %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style-b.css' | relative_url }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ '/assets/css/style-a.css' | relative_url }}">
+  {% endif %}
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  {% if site.style == "b" %}
+  <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+  {% endif %}
+</body>
+</html>
